@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" 
+         version="2.5" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"> 
+  <display-name>CarsShowroom</display-name>
+  <welcome-file-list>
+  <welcome-file>Index.html</welcome-file>
+  <welcome-file>AddProducts.html</welcome-file>
+  <welcome-file>ViewProduct</welcome-file>
+  <welcome-file>Success.html</welcome-file>
+  <welcome-file>Fetch.html</welcome-file>
+  <welcome-file>Failure.html</welcome-file>
+  <welcome-file>Details.jsp</welcome-file>
+  
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>Insertread</servlet-name>
+  <servlet-class>com.cars.controller.Insertread</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Insertread</servlet-name>
+  <url-pattern>/Insertread</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>CarServlet</servlet-name>
+  <servlet-class>com.cars.controller.CarServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>CarServlet</servlet-name>
+  <url-pattern>/CarServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>Servlet_CarData</servlet-name>
+  <servlet-class>com.cars.controller.Servlet_CarData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Servlet_CarData</servlet-name>
+  <url-pattern>/Servlet_CarData</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>FetchServlet</servlet-name>
+  <servlet-class>com.cars.controller.FetchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>FetchServlet</servlet-name>
+  <url-pattern>/FetchServlet</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

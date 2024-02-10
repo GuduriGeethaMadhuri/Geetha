@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CarsShowroom</title>
+<style>
+	body{
+		
+		background-image: url("https://www.hdwallpapers.in/download/mercedes_amg_gt_roadster_2017_4k-3840x2160.jpg");
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		background-size:  100%;
+		background-attachment: fixed;
+		font-family: Arial, sans-serif;		
+		color: black;		
+		margin: 0;
+        padding: 0;
+	    
+	    
+	    }
+	    h1{
+		font-size: 36px;
+    	font-weight: bold;
+    	margin-bottom: 0;
+    	text-align: center;
+    	background-color:hsla(250, 55%,65%,0.6);
+    	color: black;
+    	margin-top:  0;
+    	}
+    	h3{
+			text-align: center;
+		}
+		td{
+			background-color: darkgrey;
+			border: 3px solid hsla(165, 55%,65%,0.6);;
+            padding: 8px;
+            text-align: left;
+		}
+		p{
+			font-size: 18px;
+			font-weight: bold;
+			background-color: hsla(278, 50%,60%,0.6);
+			text-align: center;
+			margin-top: 0;
+		}
+		.top-right-content {
+    position: fixed;
+   bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 20px;
+} 
+
+.top-bar {
+   
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+		 
+    
+</style>
+</head>
+<body>
+	
+	<h1 align="center">Welcome to MercedesBenz</h1>
+	<p style="font-weight: bold;color: black;"> Mercedes-Benz offers a versatile range of consumer-passenger, light commercial and heavy commercial equipment. These vehicles are manufactured in multiple countries worldwide. The Smart marque of city cars are also produced by Daimler AG.</p>
+	<table align="left">
+            <tr>
+				
+  <td>Add a product</td>
+
+</form action="AddProducts.html">
+<td><button><a href="AddProducts.html">Addproduct</button></td></form></tr>
+       <tr><td>Remove a Product:</td>
+            <td><button onclick="window.location.href='Removeproduct.html';">Remove Products</button></td></tr>
+       <tr><td>Update a Product:</td>
+       <td><button onclick="window.location.href='Updateproduct.html';">Update Products</button></td></tr>
+        <tr><td>view Product:</td>
+        <form action="ViewProduct.html">
+            <td><button><a href="ViewProduct.html">View Product details</button></td> </form></tr>
+        <tr><td>View all Products:</td>
+        <form action="Fetch.html"> 
+        <td><button ><a href="Fetch.html">View all Products</button></td></form></tr>
+				<div class="top-right-content">
+				<h3 style="margin-top: 10px; font-size: 20px;" >Huge Products in MercedesBenz,please visit the below link</h3>
+				<button onclick="window.location.href='https://www.mercedes-amg.com/en/home.html'"style="font-size: 15px; padding: 10px 20px;  border: none; border-radius: 5px; cursor: pointer; align=center;">Click Here </button>
+			</div>
+       
+      
+
+
+</body>
+</html>
